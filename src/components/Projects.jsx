@@ -3,6 +3,7 @@ import FadeUp from './FadeUp';
 import StaggerReveal from './StaggerReveal';
 import uicClinicMS from '/UIC-CMS.png';
 import autisync from '/autisync.png';
+import AlumniPortal from '/AlumniPortal.png';
 
 const projects = [
   {
@@ -12,20 +13,20 @@ const projects = [
     codeLink: 'https://github.com/SefuentesRenz/Final-AutiSync_v2.0.git',
     demoLink: 'https://autisync.uic.edu.ph/'
   },
-  // {
-  //   title: 'ALUMNI PORTAL',
-  //   image: 'https://placehold.co/960x540/0b0b12/c084fc?text=ALUMNI+PORTAL',
-  //   description: 'Developed responsive UI using React.js. Collaborated using Git and GitHub.',
-  //   codeLink: 'https://github.com/yourusername/alumni-portal',
-  //   demoLink: 'https://alumni-portal-demo.vercel.app'
-  // },
   {
     title: 'UIC - CLINIC MANAGEMENT SYSTEM',
     image: uicClinicMS,
     description: 'Built a web-based system using Vue.js and Supabase. Implemented student medical records, consultations, and admin dashboard. Managed source code using Git and GitHub.',
     codeLink: 'https://github.com/SefuentesRenz/UIC-CMS.git',
     demoLink: 'https://uic-cms.vercel.app/'
-  }
+  },
+  {
+    title: 'ALUMNI PORTAL',
+    image: AlumniPortal,
+    description: 'Developed responsive UI using React.js. Collaborated using Git and GitHub.',
+    codeLink: 'https://github.com/SefuentesRenz/Alumni-Portal.git',
+    demoLink: 'https://alumni-portal-tphm.vercel.app/'
+  },
 ];
 
 const Projects = () => {
