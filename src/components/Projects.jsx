@@ -43,7 +43,7 @@ const Projects = () => {
         </FadeUp>
 
         <StaggerReveal
-          className="grid md:grid-cols-2 lg:grid-cols-2 "
+          className="grid md:grid-cols-2 lg:grid-cols-3 "
           stagger={0.1}
           delayChildren={0.08}
         >
