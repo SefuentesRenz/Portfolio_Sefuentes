@@ -40,7 +40,7 @@ const Hero = () => {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.98 }}
                 onClick={() => scrollToSection('contact')}
-                className="border-3 border-purple-300/50 hover:border-purple-500 hover:bg-purple-500/12 text-white duration-300  hover:bg-gradient-to-r hover:from-pink-400 hover:via-purple-400 hover:to-pink-500 hover:bg-clip-text hover:text-transparent px-10 py-3 rounded-2xl font-semibold text-lg backdrop-blur-sm"
+                className="border-3 cursor-pointer border-purple-300/50 hover:border-purple-500 hover:bg-purple-500/12 text-white duration-300  hover:bg-gradient-to-r hover:from-pink-400 hover:via-purple-400 hover:to-pink-500 hover:bg-clip-text hover:text-transparent px-10 py-3 rounded-2xl font-semibold text-lg backdrop-blur-sm"
               >
                 Contact Me
               </motion.button>

@@ -168,7 +168,7 @@ const Contact = () => {
               <button
                 type="submit"
                 disabled={isSending}
-                className="w-full bg-linear-to-r from-pink-500 to-purple-500 hover:from-pink-400 hover:to-purple-400 text-white py-4 px-6 rounded-2xl font-semibold text-lg shadow-xl hover:shadow-2xl hover:scale-[1.02] transition-all duration-300"
+                className="w-full bg-linear-to-r cursor-pointer from-pink-500 to-purple-500 hover:from-pink-400 hover:to-purple-400 text-white py-4 px-6 rounded-2xl font-semibold text-lg shadow-xl hover:shadow-2xl hover:scale-[1.02] transition-all duration-300"
               >
                 {isSending ? 'Sending...' : 'Send Message'}
               </button>
