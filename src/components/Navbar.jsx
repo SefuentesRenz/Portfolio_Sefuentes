@@ -110,7 +110,7 @@ const Navbar = () => {
             </a>
           </div>
           {/* Desktop Menu */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-4">
             {navItems.map((item) => (
               <a
                 key={item.id}

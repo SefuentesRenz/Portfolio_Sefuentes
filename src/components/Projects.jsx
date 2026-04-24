@@ -23,7 +23,7 @@ const projects = [
   {
     title: 'ALUMNI PORTAL',
     image: AlumniPortal,
-    description: 'Developed responsive UI using React.js. Collaborated using Git and GitHub.',
+    description: 'Developed responsive UI using React.js. Collaborated using Git and GitHub. Analyzed system requirements and translated them into functional UI/UX components for the Alumni Portal',
     codeLink: 'https://github.com/SefuentesRenz/Alumni-Portal.git',
     demoLink: 'https://alumni-portal-tphm.vercel.app/'
   },
@@ -37,13 +37,13 @@ const Projects = () => {
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 bg-linear-to-r from-pink-400 to-purple-400 bg-clip-text text-transparent">
             Projects
           </h2>
-          <p className="text-xl text-gray-400 text-center mb-20 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-xl text-gray-400 text-center mb-15 max-w-2xl mx-auto leading-relaxed">
             Showcasing my work in building responsive and modern web applications
           </p>
         </FadeUp>
 
         <StaggerReveal
-          className="grid md:grid-cols-2 lg:grid-cols-3 "
+          className="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
           stagger={0.1}
           delayChildren={0.08}
         >
