@@ -9,21 +9,21 @@ const projects = [
   {
     title: 'AUTISYNC V2.0',
     image: autisync,
-    description: 'Designed and developed the user interface using React.js. Collaborated using Git and GitHub. Implemented form validation, state management, and user-friendly navigation.',
+    description: 'AutiSync V2.0 is a web-based gamified learning platform for children with Autism Spectrum Disorder (ASD) that provides academic and daily life skills activities to support both cognitive and practical development.',
     codeLink: 'https://github.com/SefuentesRenz/Final-AutiSync_v2.0.git',
-    demoLink: 'https://autisync.uic.edu.ph/'
+    demoLink: 'https://autisync.uic.edu.ph/home'
   },
   {
     title: 'UIC - CLINIC MANAGEMENT SYSTEM',
     image: uicClinicMS,
-    description: 'Built a web-based system using Vue.js and Supabase. Implemented student medical records, consultations, and admin dashboard. Managed source code using Git and GitHub.',
+    description: 'The UIC – Clinic Management System is a web-based platform that streamlines clinic operations by managing patient records, appointments, and medical services in one centralized system. It helps staff efficiently organize workflows and ensures accurate, accessible patient information.',
     codeLink: 'https://github.com/SefuentesRenz/UIC-CMS.git',
-    demoLink: 'https://uic-cms.vercel.app/'
+    demoLink: 'https://uic-cms.vercel.app/dashboard?demo=1'
   },
   {
     title: 'ALUMNI PORTAL',
     image: AlumniPortal,
-    description: 'Developed responsive UI using React.js. Collaborated using Git and GitHub. Analyzed system requirements and translated them into functional UI/UX components for the Alumni Portal',
+    description: 'An Alumni Portal is a web-based platform that connects graduates with their institution, enabling them to stay updated, network with fellow alumni, and access announcements, events, and career opportunities.',
     codeLink: 'https://github.com/SefuentesRenz/Alumni-Portal.git',
     demoLink: 'https://alumni-portal-tphm.vercel.app/'
   },
