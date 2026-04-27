@@ -1,11 +1,26 @@
-const ProjectCard = ({ title, image, description, codeLink = '#', demoLink = '#' }) => (
-  <div className="group mx-auto w-full max-w-[420px] bg-black/40 hover:bg-purple-950/40 border border-purple-900/40 hover:border-purple-400/60 rounded-3xl p-3.5 md:p-4 hover:shadow-2xl hover:shadow-purple-500/20 transition-all duration-300 hover:-translate-y-2">
+const ProjectCard = ({ title, image, description, techStack = [], codeLink = '#', demoLink = '#' }) => (
+  <div className="group mt--10 mx-auto w-full max-w-[540px] bg-black/40 hover:bg-purple-950/40 border border-purple-900/40 hover:border-purple-400/60 rounded-3xl p-3.5 md:p-4 hover:shadow-2xl hover:shadow-purple-500/20 transition-all duration-300 hover:-translate-y-2">
     <div className="flex flex-col h-full">
       <img
         src={image}
         alt={title}
         className="w-full aspect-video object-cover rounded-2xl border border-purple-900/50 mb-4"
       />
+      <h3 className="text-lg md:text-xl font-bold text-white tracking-wide mb-2">
+        {title}
+      </h3>
+      {techStack.length > 0 && (
+        <div className="flex flex-wrap gap-2 mb-4">
+          {techStack.map((tech) => (
+            <span
+              key={tech}
+              className="px-2.5 py-1 rounded-full text-xs font-medium text-purple-100 bg-purple-500/15 border border-purple-400/35"
+            >
+              {tech}
+            </span>
+          ))}
+        </div>
+      )}
       <p className="text-gray-300 leading-relaxed mb-4 grow text-sm md:text-[15px]">
         {description}
       </p>

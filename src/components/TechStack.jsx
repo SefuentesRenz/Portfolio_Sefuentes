@@ -8,8 +8,10 @@ import {
   SiReact,
   SiSupabase,
   SiTailwindcss,
+  SiVite,
   SiVuedotjs
 } from 'react-icons/si';
+import TypingText from './TypingText';
 
 const TechStack = () => {
   const techStack = [
@@ -25,14 +27,15 @@ const TechStack = () => {
   const tools = [
     { name: 'Git', icon: SiGit, iconColor: '#F05032', color: 'gray' },
     { name: 'GitHub', icon: SiGithub, iconColor: '#E2E8F0', color: 'slate' },
-    { name: 'Figma', icon: SiFigma, iconColor: '#F24E1E', color: 'pink' }
+    { name: 'Figma', icon: SiFigma, iconColor: '#F24E1E', color: 'pink' },
+    { name: 'Vite', icon: SiVite, iconColor: '#646CFF', color: 'indigo' }
   ];
 
   return (
     <section id="Skills" className="py-24 px-4 bg-linear-to-b from-black/45 via-purple-950/20 to-black/4">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-4xl font-bold text-center mb-16 bg-linear-to-r from-pink-400 to-purple-400 bg-clip-text text-transparent">
-          Technical Skills
+        <h2 className="text-5xl font-bold text-center mb-10 bg-linear-to-r from-pink-400 to-purple-400 bg-clip-text text-transparent">
+          <TypingText text="Technical Skills" />
         </h2>
         <h3 className="text-2xl font-semibold text-white mb-8 text-center">Tech Stack</h3>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 max-w-4xl mx-auto mb-16">
@@ -50,7 +53,7 @@ const TechStack = () => {
         </div>
 
         <h3 className="text-2xl font-semibold text-white mb-8 text-center">Tools</h3>
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-6 max-w-3xl mx-auto">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-7 max-w-4xl mx-auto">
           {tools.map((item) => (
             <div key={item.name} className="group text-center p-6 rounded-2xl bg-black/45 backdrop-blur-sm hover:bg-purple-950/45 hover:scale-[1.03] transition-all duration-300 border border-purple-900/40 hover:border-purple-400/55 hover:shadow-2xl hover:shadow-purple-500/20">
               <div className="flex justify-center text-4xl mb-4 group-hover:scale-110 transition-transform">

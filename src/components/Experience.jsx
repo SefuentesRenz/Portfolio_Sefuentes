@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
+import TypingText from './TypingText';
 
 const Experience = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -46,8 +47,8 @@ const Experience = () => {
   return (
     <section id="experience" className="py-24 px-4 bg-linear-to-b from-black/45 via-purple-950/20 to-black/45">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-4xl font-bold text-center mb-20 bg-linear-to-r from-pink-400 to-purple-400 bg-clip-text text-transparent">
-          Experience
+        <h2 className="text-5xl font-bold text-center mb-20 bg-linear-to-r from-pink-400 to-purple-400 bg-clip-text text-transparent">
+          <TypingText text="Experience" />
         </h2>
         <div ref={timelineRef} className="relative space-y-12">
           <div className="absolute left-0 top-0 h-full w-0.5 bg-linear-to-b from-pink-500 to-purple-500" />

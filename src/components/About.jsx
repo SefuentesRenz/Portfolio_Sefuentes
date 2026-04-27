@@ -1,5 +1,6 @@
 import profilePic from '/profilePic.jpg';
 import FadeUp from './FadeUp';
+import TypingText from './TypingText';
 
 const About = () => {
   return (
@@ -17,7 +18,7 @@ const About = () => {
         </FadeUp>
         <FadeUp className="order-2 md:order-2" amount={0.35} distance={56} duration={0.65} once={false}>
           <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-linear-to-r from-pink-400 to-purple-400 bg-clip-text text-transparent">
-            About Me
+            <TypingText text="About Me" />
           </h2>
           <FadeUp delay={0.08} amount={0.35} distance={42} duration={0.6} once={false}>
             <p className="text-xl text-gray-300 leading-relaxed mb-8">
