@@ -1,9 +1,49 @@
+import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import profilePic from '../assets/Profile.JPG';
 import FadeUp from './FadeUp';
 import { Download } from "lucide-react";
 
 const Hero = () => {
+  const titleText = 'Front-End Developer';
+  const typingSpeed = 90;
+  const deletingSpeed = 55;
+  const pauseAtEnd = 1400;
+  const pauseAtStart = 300;
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [isDeleting, setIsDeleting] = useState(false);
+
+  useEffect(() => {
+    const timeoutDelay = !isDeleting && currentIndex === titleText.length
+      ? pauseAtEnd
+      : isDeleting && currentIndex === 0
+        ? pauseAtStart
+        : isDeleting
+          ? deletingSpeed
+          : typingSpeed;
+
+    const typingTimeout = setTimeout(() => {
+      if (!isDeleting && currentIndex < titleText.length) {
+        setCurrentIndex((prev) => prev + 1);
+        return;
+      }
+
+      if (!isDeleting && currentIndex === titleText.length) {
+        setIsDeleting(true);
+        return;
+      }
+
+      if (isDeleting && currentIndex > 0) {
+        setCurrentIndex((prev) => prev - 1);
+        return;
+      }
+
+      setIsDeleting(false);
+    }, timeoutDelay);
+
+    return () => clearTimeout(typingTimeout);
+  }, [currentIndex, deletingSpeed, isDeleting, pauseAtEnd, pauseAtStart, titleText, typingSpeed]);
+
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -18,8 +58,18 @@ const Hero = () => {
             <h1 className="text-5xl lg:text-7xl  text-white/95 font-bold  tracking-tight ">
               Renz Angelo T. Sefuentes
             </h1>
-            <h2 className="text-2xl lg:text-4xl font-black bg-linear-to-r from-pink-400 via-purple-400 to-pink-500 bg-clip-text text-transparent leading-tight font-medium">
-              Frontend Developer
+            <h2
+              className="text-2xl lg:text-4xl font-black bg-linear-to-r from-pink-400 via-purple-400 to-pink-500 bg-clip-text text-transparent leading-tight font-medium"
+              aria-label={titleText}
+            >
+              {titleText.slice(0, currentIndex)}
+              <motion.span
+                className="inline-block"
+                animate={{ opacity: [1, 0, 1] }}
+                transition={{ duration: 0.9, repeat: Infinity }}
+              >
+                |
+              </motion.span>
             </h2>
             <p className="text-lg lg:text-xl text-gray-300 leading-relaxed max-w-lg mx-auto lg:mx-0">
               A results-driven frontend developer with a strong foundation in building responsive web applications using React.js and Vue.js.  

@@ -24,7 +24,7 @@ const ProjectCard = ({ title, image, description, codeLink = '#', demoLink = '#'
           rel="noopener noreferrer"
           className="flex-1 bg-linear-to-r from-pink-500 to-purple-500 hover:from-pink-400 hover:to-purple-400 text-white text-center py-2 px-3 rounded-xl text-sm font-semibold transition-all duration-300"
         >
-          Demo
+          Live Site
         </a>
       </div>
     </div>
