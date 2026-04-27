@@ -21,7 +21,7 @@ const About = () => {
           </h2>
           <FadeUp delay={0.08} amount={0.35} distance={42} duration={0.6} once={false}>
             <p className="text-xl text-gray-300 leading-relaxed mb-8">
-            A passionate frontend developer based in Davao City, Philippines, I focus on building responsive and modern web applications using React.js and Vue.js. 
+            A passionate front-end developer based in Davao City, Philippines, I focus on building responsive and modern web applications using React.js and Vue.js. 
             </p>
           </FadeUp>
           <FadeUp delay={0.14} amount={0.35} distance={42} duration={0.6} once={false}>
